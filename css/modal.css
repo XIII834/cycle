@@ -1,0 +1,109 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 900;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 300px auto;
+  padding: 25px 35px;
+  background: #fff;
+  width: 25%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.pp-form > label {
+    font-size: 16px;
+}
+input[type="text"].pp-inpt {
+    padding: 10px;
+    border: 2px solid #ffc900;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+.pp-form p {
+    text-align: center;
+    margin-top: 10px;    
+}
+.pp-form input[type="submit"] {
+    background: #ffc900;
+    font-size: 16px;
+    border: 0;
+    padding: 13px 15px;
+    font-weight: bold;    
+    margin-top: 20px;
+}
+.pp-lnk {
+    color: #00a3dc;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+.pp-big {
+    margin: 50px auto;
+    width: 40%;
+} 
+.pp-big br {
+    clear: both;
+}
+.pp-title {
+    font-size: 18px;
+    float: left;
+    margin-bottom: 15px;
+}
+.pp-post, .pp-post > a {
+    color: #111;    
+}
+.pp-post {
+    float: right;
+}
+.pp-col {
+    width: 50%;
+    float: left;
+}
+.pp-col > p > span {
+    color: #ffc900;
+    font-size: 14px;
+    text-decoration: underline;
+}
+@media screen and (max-width: 1024px){
+  .overlay {
+    
+  }
+  .popup, .pp-big {
+    width: 85%;
+  }
+  .pp-col {
+    width: 100%;
+  }
+}
